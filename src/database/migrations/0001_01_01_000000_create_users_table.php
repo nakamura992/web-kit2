@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('password');
-            $table->integer('role')->comment('1: サービスオーナー, 2: 代理店オーナー, 3: 代理店スタッフ');
             $table->timestamps();
         });
 

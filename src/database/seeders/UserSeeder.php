@@ -18,21 +18,18 @@ class UserSeeder extends Seeder
             'name' => 'オーナーアカウント',
             'email' => 'info@y-com.info',
             'password' => Hash::make('password'),
-            'role' => '1',
         ]);
 
         User::factory()->create([
             'name' => '代理店オーナーアカウント',
             'email' => 'agent-owner@y-com.info',
             'password' => Hash::make('password'),
-            'role' => '2',
         ]);
 
         User::factory()->create([
             'name' => '代理店スタッフアカウント',
             'email' => 'agent-staff@y-com.info',
             'password' => Hash::make('password'),
-            'role' => '3',
         ]);
     }
 }
