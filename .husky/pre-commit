@@ -1,0 +1,7 @@
+#!/bin/sh
+cd next && npm run format 2>&1
+FORMAT_EXIT_CODE=$?
+if [ $FORMAT_EXIT_CODE -ne 0 ]; then
+    echo "Format failed with exit code $FORMAT_EXIT_CODE"
+    exit 1
+fi
